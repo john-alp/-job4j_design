@@ -1,7 +1,11 @@
-package ru.job4j;
+package ru.job4j.iterator;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
+
+/** 09.2021
+ * Реализуйте итератор для массива. Итератор должен отдавать элементы в обратном порядке.
+ */
 
 public class BackwardArrayIt implements Iterator<Integer> {
 

@@ -1,7 +1,16 @@
-package ru.job4j;
+package ru.job4j.iterator;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
+
+/**
+ *  Итератор, который последовательно вернет элементы
+ *  Реализуйте методы next и hasNext.
+ *
+ * Копировать двухмерный в одномерный массив не нужно. Это не верное решение.
+ * Нужно с помощью чисел row и column двигать указатель.
+ *
+ */
 
 public class MatrixIt implements Iterator<Integer> {
     private final int[][] data;
