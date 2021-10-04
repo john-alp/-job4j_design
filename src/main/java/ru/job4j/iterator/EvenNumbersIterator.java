@@ -11,7 +11,7 @@ import java.util.NoSuchElementException;
  * Результат работы ваших методов не должен зависеть от последовательности в которой программист вызывает методы.
  *
  * @author ESolomatin
- * @version 1.1
+ * @version 1.5
  * @since 28.09.2021
  **/
 
@@ -25,13 +25,10 @@ public class EvenNumbersIterator implements Iterator<Integer> {
 
     @Override
     public boolean hasNext() {
-        while (index < data.length) {
-            if (data[index] % 2 == 0) {
-                return true;
-            }
+        while (index < data.length && data[index] % 2 != 0) {
             index++;
         }
-        return false;
+        return index < data.length && data[index] % 2 == 0;
     }
 
     @Override
