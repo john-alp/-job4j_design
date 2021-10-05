@@ -25,7 +25,6 @@ public class Generics {
         first.add(new Animal());
         second.add(new Predator());
         third.add(new Tiger());
-
         final Animal animal = first.get(1);
 
         gen.printObject(first);
