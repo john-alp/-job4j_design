@@ -17,7 +17,7 @@ import java.util.List;
 
 public class Generics {
     public static void main(String[] args) {
-        Generics gen = new Generics();
+        Generics generics = new Generics();
         List<Animal> first = new ArrayList<>();
         List<Predator> second = new ArrayList<>();
         List<Tiger> third = new ArrayList<>();
@@ -27,18 +27,18 @@ public class Generics {
         third.add(new Tiger());
         final Animal animal = first.get(1);
 
-        gen.printObject(first);
-        gen.printObject(second);
-        gen.printObject(third);
+        generics.printObject(first);
+        generics.printObject(second);
+        generics.printObject(third);
         System.out.println();
 
         //  gen.printBoundedWildCard(first);
-        gen.printBoundedWildCard(second);
-        gen.printBoundedWildCard(third);
+        generics.printBoundedWildCard(second);
+        generics.printBoundedWildCard(third);
         System.out.println();
 
-        gen.printLowerBoundedWildCard(first);
-        gen.printLowerBoundedWildCard(second);
+        generics.printLowerBoundedWildCard(first);
+        generics.printLowerBoundedWildCard(second);
         // gen.printLowerBoundedWildCard(third);
     }
 
