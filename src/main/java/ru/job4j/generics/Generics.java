@@ -31,15 +31,18 @@ public class Generics {
         generics.printObject(second);
         generics.printObject(third);
         System.out.println();
-
-        //  gen.printBoundedWildCard(first);
+/**
+        gen.printBoundedWildCard(first);
+ */
         generics.printBoundedWildCard(second);
         generics.printBoundedWildCard(third);
         System.out.println();
 
         generics.printLowerBoundedWildCard(first);
         generics.printLowerBoundedWildCard(second);
-        // gen.printLowerBoundedWildCard(third);
+/**
+         gen.printLowerBoundedWildCard(third);
+ */
     }
 
     public void printObject(List<? extends Animal> list) {
